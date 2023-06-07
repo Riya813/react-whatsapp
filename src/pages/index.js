@@ -1,10 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import logo from ''
-import logo from 'images/1.avif'
-import "./style.css"
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+// import styles from '@/styles/Home.module.css';
+import logo from '../../public/images/1.jpg';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,21 +18,21 @@ export default function Home() {
       <div className='flex'>
     <aside className='aside-box'>
       <div className='aside-header margin flex-center'>
-        <img src={logo} alt="profile-pic"/>
+        <Image src={logo} alt="profile-pic"/>
       </div>
       <div className='aside-content'>
         <div className='aside-search-bar flex-center'>
           <input type="text" />
         </div>
         <div className='aside-content-div margin flex-center'>
-          <img src={logo} alt="profile-pic"/>
+          <Image src={logo} alt="profile-pic"/>
           <p>Hey</p>
         </div>
       </div>
     </aside>
     <main className='main-box'>
       <div className='main-header margin flex-center'>
-        <img src={logo} alt="profile-pic"/>
+        <Image src={logo} alt="profile-pic"/>
         <h1>Website Name</h1>
       </div>
       <div className='main-content margin'>
